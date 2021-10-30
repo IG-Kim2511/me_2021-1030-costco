@@ -1004,10 +1004,10 @@
   
     display: grid;
     grid-template-areas:
-      "o p q "
-      "s t a  "
-      "u v b "
-      "w e e";
+      " p q "
+      " t a  "
+      " v b "
+      " e e";
     gap: 1%;
   }
   
