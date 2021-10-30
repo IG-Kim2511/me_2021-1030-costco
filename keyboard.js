@@ -1,5 +1,5 @@
-/*🌊next step
-10. display input type : text  -> change to number  ...🌊
+/*🍚next step
+10. display input type : text  -> change to number  ...🍚
 keyboard-login  --display input type : text
 keyboard-password  --display input type : text
 keyboard-discount  --display input type : number
