@@ -108,6 +108,7 @@ const item_discountPercent = document.querySelector('.page1-discount .item_disco
 const page2Elem = document.querySelector('.page2');
 const page2ReturnBtn = document.querySelector('.page2 .return');
 const page2CreditBtn = document.querySelector('.page2 .credit');
+const page2DebitBtn = document.querySelector('.page2 .debit');
 
 
 const page3Elem = document.querySelector('.page3');
@@ -181,6 +182,10 @@ function transNumHandler() {
 }
 
 page2CreditBtn.addEventListener('click',()=>{
+    page3Elem.classList.add('change');
+});
+
+page2DebitBtn.addEventListener('click',()=>{
     page3Elem.classList.add('change');
 });
 
