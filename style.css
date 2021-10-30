@@ -15,7 +15,7 @@
     position: relative;
   }
   
-  .world-left .notification {
+  .world-right .notification {
     background-color: var(--color-white-darker);
     color: var(--color-20);
   
