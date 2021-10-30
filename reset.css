@@ -1,6 +1,19 @@
 :root {
   /* color */
 
+  --color-10: #003049;
+  --color-10-dark: #01111a;
+
+  --color-20: #d62828;
+  --color-20-dark: #d62828;
+
+  --color-30: #f77f00;
+  --color-30-dark: #5e3101;
+
+  --color-40: #fcbf49;
+  --color-50: #eae2b7;
+
+  /*  */
   --color-blue: #269df5;
   --color-blue-dark: #35719e;
 
@@ -9,20 +22,18 @@
 
   --color-yellow: #ffb300;
   --color-yellow-dark: #c17900;
-  
+
   --color-yellow2: #dbdb54;
   --color-yellow2-dark: #7e7b3c;
-  
 
   --color-purple: #ab47bc;
   --color-purple-dark: #8e24aa;
 
   --color-green: #2fef1f;
   --color-green-dark: #30532e;
-  
+
   --color-grey2: #c0c6cb;
   --color-grey2-dark: #4f5153;
-
 
   --color-grey: #8e8f91;
   --color-grey-darker: #555;
@@ -32,6 +43,10 @@
   --color-white-darker: #eee;
   --color-white: #fff;
 }
+
+/* 
+
+*/
 
 /*universal  */
 
@@ -62,7 +77,7 @@ input::-webkit-inner-spin-button {
 }
 
 /* Firefox */
-input[type=number] {
+input[type="number"] {
   -moz-appearance: textfield;
 }
 
@@ -74,7 +89,6 @@ ul {
   list-style: none;
   padding-left: 0;
 }
-
 
 /* 🍀Utility class */
 
@@ -98,7 +112,7 @@ ul {
   align-items: center;
 }
 
-.pointer-events{
+.pointer-events {
   pointer-events: none;
   /* pointer-events: auto; */
 }
@@ -108,10 +122,10 @@ ul {
   box-shadow: 0px 1px 0px 0px #f0f7fa;
   background: linear-gradient(
     to bottom,
-    var(--color-blue) 5%,
-    var(--color-blue-dark) 100%
+    var(--color-10) 5%,
+    var(--color-10-dark) 100%
   );
-  background-color: var(--color-blue);
+  background-color: var(--color-10);
   border-radius: 1rem;
   /* border:1px solid #057fd0; */
   display: inline-block;
@@ -130,8 +144,12 @@ ul {
   height: 8rem;
 }
 .myButton:hover {
-  background: linear-gradient(to bottom, var(--color-blue-dark) 5%, var(--color-blue) 100%);
-  background-color: var(--color-blue-dark);
+  background: linear-gradient(
+    to bottom,
+    var(--color-10-dark) 5%,
+    var(--color-10) 100%
+  );
+  background-color: var(--color-10-dark);
 }
 .myButton:active {
   position: relative;
