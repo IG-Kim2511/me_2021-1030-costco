@@ -15,7 +15,7 @@
     position: relative;
   }
   
-  .world-right .notification {
+.notification {
     background-color: var(--color-white-darker);
     color: var(--color-20);
   
@@ -26,12 +26,12 @@
     padding: 1rem;
   }
   
-  .scanner-input {
-  
-    margin-top: 2rem;
-    padding: 1rem;
-    width: 30rem;
-  }
+.scanner-input {
+
+  margin-top: 2rem;
+  padding: 1rem;
+  width: 30rem;
+}
   
   
   
@@ -648,10 +648,10 @@
   
     display: grid;
     grid-template-areas:
-      "o p r q "
-      "s t a b "
-      "u v c d "
-      "w x e e";
+      " p r q "
+      " t a b "
+      " v c d "
+      " x e e";
     gap: 1%;
   }
   
