@@ -16,8 +16,8 @@
   }
   
 .notification {
-    background-color: var(--color-white-darker);
-    color: var(--color-20);
+    background-color: var(--color-40);
+    color: var(--color-10);
   
     position: absolute;
     top: 2rem;
