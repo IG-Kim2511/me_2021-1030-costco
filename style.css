@@ -657,7 +657,13 @@
   
   /* 🍉grid */
   .page1 .btn-container .grid-a {
-    grid-area: a;
+    grid-area: a;  
+  }
+  
+
+  
+  .page1 .btn-container .help {
+
   
     background: linear-gradient(
       to bottom,
@@ -667,7 +673,7 @@
     background-color: var(--color-30);
   }
   
-  .page1 .btn-container .grid-a:hover {
+  .page1 .btn-container .help:hover {
     background: linear-gradient(
       to bottom,
       var(--color-30-dark) 5%,
@@ -721,6 +727,12 @@
   
   .page1 .btn-container .grid-r {
     grid-area: r;
+  }
+
+  
+  .page1 .btn-container .discount,
+  .page1 .btn-container .remove_item,
+  .page1 .btn-container .cancel {    
     background: linear-gradient(
       to bottom,
       var(--color-20) 5%,
@@ -728,7 +740,9 @@
     );
     background-color: var(--color-20);
   }
-  .page1 .btn-container .grid-r:hover {
+  .page1 .btn-container .discount:hover,
+  .page1 .btn-container .remove_item:hover,
+  .page1 .btn-container .cancel:hover{
     background: linear-gradient(
       to bottom,
       var(--color-20-dark) 5%,
@@ -737,6 +751,9 @@
     background-color: var(--color-20-dark);
   }
   
+
+
+
   .page1 .btn-container .grid-s {
     grid-area: s;
   }
