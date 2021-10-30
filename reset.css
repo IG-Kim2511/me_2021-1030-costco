@@ -1,0 +1,144 @@
+:root {
+  /* color */
+
+  --color-blue: #269df5;
+  --color-blue-dark: #35719e;
+
+  --color-red: #d61319;
+  --color-red-dark: #78080c;
+
+  --color-yellow: #ffb300;
+  --color-yellow-dark: #c17900;
+  
+  --color-yellow2: #dbdb54;
+  --color-yellow2-dark: #7e7b3c;
+  
+
+  --color-purple: #ab47bc;
+  --color-purple-dark: #8e24aa;
+
+  --color-green: #2fef1f;
+  --color-green-dark: #30532e;
+  
+  --color-grey2: #c0c6cb;
+  --color-grey2-dark: #4f5153;
+
+
+  --color-grey: #8e8f91;
+  --color-grey-darker: #555;
+  --color-grey-light1: #777;
+  --color-grey-light2: #aaa;
+
+  --color-white-darker: #eee;
+  --color-white: #fff;
+}
+
+/*universal  */
+
+/* html{
+      font-size: 80%;
+  } */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+
+/* 🍀Utility class */
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flot_clear {
+  clear: both;
+}
+
+.relative {
+  position: relative;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 🍉 button */
+.myButton {
+  box-shadow: 0px 1px 0px 0px #f0f7fa;
+  background: linear-gradient(
+    to bottom,
+    var(--color-blue) 5%,
+    var(--color-blue-dark) 100%
+  );
+  background-color: var(--color-blue);
+  border-radius: 1rem;
+  /* border:1px solid #057fd0; */
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 1.5rem;
+  font-weight: bold;
+  /* padding:6px 24px; */
+  text-decoration: none;
+  text-shadow: 0px -1px 0px #5b6178;
+
+  /* ⚡me */
+  position: relative;
+  padding: 1rem;
+  height: 8rem;
+}
+.myButton:hover {
+  background: linear-gradient(to bottom, var(--color-blue-dark) 5%, var(--color-blue) 100%);
+  background-color: var(--color-blue-dark);
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+/*  */
+.myButton-empty {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
