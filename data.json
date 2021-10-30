@@ -1,0 +1,35 @@
+selfcheckitem =[
+    {
+      "number": 9781944648817,
+      "name": "pork",
+      "price": 55.05,
+      "secretIdentity": "a ",
+      "powers": [
+        "a",
+        "a",
+        "a"
+      ]
+    },
+    {
+      "number": 899780002720,
+      "name": "snack",
+      "price": 22.35,
+      "secretIdentity": "a ",
+      "powers": [
+        "a",
+        "a",
+        "a"
+      ]
+    },
+    {
+      "number": 850016923127,
+      "name": "beef",
+      "price": 100.05,
+      "secretIdentity": "a ",
+      "powers": [
+        "a",
+        "a",
+        "a"
+      ]
+    }
+  ]
