@@ -15,9 +15,9 @@
     position: relative;
   }
   
-  .world-left .notification {
-    background-color: var(--color-white-darker);
-    color: var(--color-20);
+.notification {
+    background-color: var(--color-40);
+    color: var(--color-10);
   
     position: absolute;
     top: 2rem;
@@ -26,12 +26,12 @@
     padding: 1rem;
   }
   
-  .scanner-input {
-  
-    margin-top: 2rem;
-    padding: 1rem;
-    width: 30rem;
-  }
+.scanner-input {
+
+  margin-top: 2rem;
+  padding: 1rem;
+  width: 30rem;
+}
   
   
   
@@ -648,10 +648,10 @@
   
     display: grid;
     grid-template-areas:
-      "o p r q "
-      "s t a b "
-      "u v c d "
-      "w x e e";
+      "  r q "
+      "  a b "
+      "  c d "
+      "  e e";
     gap: 1%;
   }
   
@@ -854,10 +854,10 @@
   
     display: grid;
     grid-template-areas:
-      "o p q r "
-      "s t a b "
-      "u v c d "
-      "w x e e";
+      " p q r "
+      " t a b "
+      " v c d "
+      " x e e";
     gap: 1%;
   }
   
@@ -1004,10 +1004,10 @@
   
     display: grid;
     grid-template-areas:
-      "o p q r "
-      "s t a b "
-      "u v c d "
-      "w x e e";
+      " p q "
+      " t a  "
+      " v b "
+      " e e";
     gap: 1%;
   }
   
