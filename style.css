@@ -17,7 +17,7 @@
   
   .world-left .notification {
     background-color: var(--color-white-darker);
-    color: var(--color-purple);
+    color: var(--color-20);
   
     position: absolute;
     top: 2rem;
@@ -154,7 +154,7 @@
   /* ⚡js1011-10, Discount line*/
   
   .check-table tbody .discount_p {
-    color: var(--color-purple);
+    color: var(--color-20);
   }
   
   .check-table tbody .discount_title {  
@@ -229,7 +229,7 @@
     vertical-align: middle;
   }
   .check-table .discount_img_btn.change {
-    background-color: var(--color-purple);
+    background-color: var(--color-20);
     /* margin-left: 0.45rem; */
   }
   
@@ -687,10 +687,10 @@
   
     background: linear-gradient(
       to bottom,
-      var(--color-green) 5%,
-      var(--color-green-dark) 100%
+      var(--color-40) 5%,
+      var(--color-40-dark) 100%
     );
-    background-color: var(--color-green);
+    background-color: var(--color-40);
   
     padding: 3rem;
   }
@@ -698,10 +698,10 @@
   .page1 .btn-container .grid-e:hover {
     background: linear-gradient(
       to bottom,
-      var(--color-green-dark) 5%,
-      var(--color-green) 100%
+      var(--color-40-dark) 5%,
+      var(--color-40) 100%
     );
-    background-color: var(--color-green-dark);
+    background-color: var(--color-40-dark);
   }
   
   /* grid- empty box */
@@ -719,18 +719,18 @@
     grid-area: r;
     background: linear-gradient(
       to bottom,
-      var(--color-purple) 5%,
-      var(--color-purple-dark) 100%
+      var(--color-20) 5%,
+      var(--color-20-dark) 100%
     );
-    background-color: var(--color-purple);
+    background-color: var(--color-20);
   }
   .page1 .btn-container .grid-r:hover {
     background: linear-gradient(
       to bottom,
-      var(--color-purple-dark) 5%,
-      var(--color-purple) 100%
+      var(--color-20-dark) 5%,
+      var(--color-20) 100%
     );
-    background-color: var(--color-purple-dark);
+    background-color: var(--color-20-dark);
   }
   
   .page1 .btn-container .grid-s {
@@ -754,7 +754,7 @@
   
   /* 🍉img */
   .page1 .btn-container .grid-a .img_container {
-    background-color: #d4d948;
+    background-color: var(--color-40-dark);
     width: 2.2rem;
     height: 2.2rem;
   
@@ -893,10 +893,10 @@
   
     background: linear-gradient(
       to bottom,
-      var(--color-green) 5%,
-      var(--color-green-dark) 100%
+      var(--color-40) 5%,
+      var(--color-40-dark) 100%
     );
-    background-color: var(--color-green);
+    background-color: var(--color-40);
   
     padding: 3rem;
   }
@@ -904,10 +904,10 @@
   .page1-10 .btn-container .grid-e:hover {
     background: linear-gradient(
       to bottom,
-      var(--color-green-dark) 5%,
-      var(--color-green) 100%
+      var(--color-40-dark) 5%,
+      var(--color-40) 100%
     );
-    background-color: var(--color-green-dark);
+    background-color: var(--color-40-dark);
   }
   
   /* grid- empty box */
@@ -1013,18 +1013,18 @@
   
     background: linear-gradient(
       to bottom,
-      var(--color-purple) 5%,
-      var(--color-purple-dark) 100%
+      var(--color-20) 5%,
+      var(--color-20-dark) 100%
     );
-    background-color: var(--color-purple);
+    background-color: var(--color-20);
   }
   .page1-discount .btn-container .grid-a:hover {
     background: linear-gradient(
       to bottom,
-      var(--color-purple-dark) 5%,
-      var(--color-purple) 100%
+      var(--color-20-dark) 5%,
+      var(--color-20) 100%
     );
-    background-color: var(--color-purple-dark);
+    background-color: var(--color-20-dark);
   }
   
   .page1-discount .btn-container .grid-b {
@@ -1042,10 +1042,10 @@
   
     background: linear-gradient(
       to bottom,
-      var(--color-green) 5%,
-      var(--color-green-dark) 100%
+      var(--color-40) 5%,
+      var(--color-40-dark) 100%
     );
-    background-color: var(--color-green);
+    background-color: var(--color-40);
   
     padding: 3rem;
   }
@@ -1053,10 +1053,10 @@
   .page1-discount .btn-container .grid-e:hover {
     background: linear-gradient(
       to bottom,
-      var(--color-green-dark) 5%,
-      var(--color-green) 100%
+      var(--color-40-dark) 5%,
+      var(--color-40) 100%
     );
-    background-color: var(--color-green-dark);
+    background-color: var(--color-40-dark);
   }
   
   /* grid- empty box */
@@ -1080,18 +1080,18 @@
     grid-area: t;
     background: linear-gradient(
       to bottom,
-      var(--color-purple) 5%,
-      var(--color-purple-dark) 100%
+      var(--color-20) 5%,
+      var(--color-20-dark) 100%
     );
-    background-color: var(--color-purple);
+    background-color: var(--color-20);
   }
   .page1 .btn-container .grid-r:hover {
     background: linear-gradient(
       to bottom,
-      var(--color-purple-dark) 5%,
-      var(--color-purple) 100%
+      var(--color-20-dark) 5%,
+      var(--color-20) 100%
     );
-    background-color: var(--color-purple-dark);
+    background-color: var(--color-20-dark);
   }
   
   .page1-discount .btn-container .grid-u {
@@ -1278,7 +1278,7 @@
   }
   
   .page2 .btn-container .grid-f .img_container {
-    background-color: #d4d948;
+    background-color: var(--color-40-dark);
     width: 2.2rem;
     height: 2.2rem;
   
@@ -1403,7 +1403,7 @@
   }
   
   .page3 .btn-container .grid-b .img_container {
-    background-color: #d4d948;
+    background-color: var(--color-40-dark);
     width: 2.2rem;
     height: 2.2rem;
   
