@@ -78,6 +78,7 @@ let removeBtn = document.querySelector(".remove_btn");
 const tableWrap = document.querySelector('.world-left .table-wrap');
 const check = document.querySelector(".world-left .check");
 const scannerInput = document.querySelector('.scanner-input');
+const clickRight = document.querySelector('.click-right');
 
 const page1Elem = document.querySelector('.page1');
 const worldRight_btnContainer = document.querySelector(".world-right .btn-container");
@@ -439,16 +440,13 @@ page1DiscountBtn.addEventListener('click',(e)=>{
         scannerInput.style.display =`none`;          
         page1_discount_Elem.classList.add('change');
 
+        clickRight.setAttribute('style','display:block');
+
         page1DiscountHandler(e); 
-
-
-        // if(discountTitle.childNodes[1].className == 'discount_span') {
-     
-        //     console.log(`hello`)
-        // } 
-
     }
 }); 
+
+
 
 // 🍀js1026. stay the discount page when there are numbers already on table  🌊
 
@@ -465,6 +463,10 @@ function page1DiscountHandler(e) {
     tableWrap.addEventListener("click",(e)=>{
         
         const selected = document.querySelector(".tbody_items.selected");
+
+        
+        clickRight.setAttribute('style','display:none');
+
 
         if (selected != null) {
             selected.classList.remove("selected");                   
@@ -542,119 +544,9 @@ function discount_num_putting(e) {
         }        
     ); 
 
-    
     discountDisplay.value = "";
     
 }
-
-
-
-
-// 🍚way1) create the Discount line as soon as  I enter the discount-page
-
-// //🍀js1007, 🍀js1025. Discount line created under the each items
-
-// function page1DiscountHandler(e) {   
-//     console.log(e)
-//     e.preventDefault();   
-
-//     //🍉new discount line :  for, querySelectorAll
-
-//      discountTitleAll = document.querySelectorAll('.discount_title');
-//      discountSetAll = document.querySelectorAll('.discount_set');
-//      discountAmountAll = document.querySelectorAll('.discount_amount');
-//      discountedPriceAll = document.querySelectorAll('.discounted_price');
-
-//     for (let i = 0; i < discountTitleAll.length; i++) {
-//         discountTitleAll[i].innerHTML=`Discount <span class="discount_span" >click</span> %`;        
-//     }
-
-//     for (let i = 0; i < discountTitleAll.length; i++) {
-//         discountSetAll[i].innerHTML=`&nbsp;`;  
-//     }  
-
-//     for (let i = 0; i < discountTitleAll.length; i++) {
-//         discountAmountAll[i].innerHTML=`&nbsp;`;        
-//     }
-
-//     for (let i = 0; i < discountTitleAll.length; i++) {     
-//         discountedPriceAll[i].innerHTML=`&nbsp;`;        
-//     }
-
-
-//     // 🍉selected tr : puttiong the background color   
-
-//     // putting the Discoutn line when I click the tr ~ td 🌊
-
-//     tableWrap.addEventListener("click",(e)=>{
-        
-//         const selected = document.querySelector(".tbody_items.selected");
-
-//         if (selected != null) {
-//             selected.classList.remove("selected");                   
-//             keyboardDiscount.classList.remove('change');      
-//         }
-
-//         else if (e.target.classList.contains("discount_p")) {            
-//         e.target.parentNode.parentNode.classList.add("selected");
-//         }
-        
-//         e.target.parentNode.classList.add("selected");
-//         console.log(e.target)        
-
-//         // keyboard        
-//         keyboardDiscount.classList.add('change');         
-        
-             
-//         // 🍉1025-20.            
-//         discount_num_putting(e)
-//     });
-    
-//     // 🌊putting BG , when click the input 
-// }
-
-
-
-// // 🍉1025-20. putting num from keyboardDisount into table-td........🌊🌊🌊 (chreate Discount line as soon as enter the discount page)
-
-// function discount_num_putting(e) {
-
-//     if (e.target.classList.contains("discount_span")) {
-
-//         // 🌊putting keyboard-discount number into e.target
-//         discount_percent = e.target;        
-
-//         discountedSet = e.target.parentNode.parentNode.parentNode.children[2].children[0];
-
-//         discounted_itemprice = e.target.parentNode.parentNode.parentNode.children[4].children[0];
-//         console.log(discounted_itemprice)
-
-//         itemPrice = e.target.parentNode.parentNode.parentNode.children[4].textContent          
-//         itemPriceNum = parseFloat(itemPrice).toFixed(2);      
-        
-//         console.log(itemPrice)
-//     }
-    
-//         // 🍉js1011-30. Enter- keyboard-discount number 
-//         discountEnterKey.addEventListener('click',()=>{
-
-//             // 🍉put the discount number(%) from keyboard display into the table  
-            
-//             discount_percent.innerHTML= `${discountDisplay.value}`;          
-
-//             console.log(discount_percent.textContent)
-
-//             discountedSet.innerHTML = "$" + parseFloat(itemPriceNum * discountDisplay.value /100).toFixed(2);  
-
-//             discounted_itemprice.innerHTML = parseFloat( itemPriceNum - (itemPriceNum* discountDisplay.value /100)).toFixed(2);;    
-
-//             keyboardDiscount.classList.remove('change');            
-//         }        
-//     ); 
-// }
-
-
-
 
 
 
@@ -662,6 +554,8 @@ function discount_num_putting(e) {
 
 page1_discount_ContinueBtn.addEventListener('click',()=>{
     
+    clickRight.setAttribute('style','display:none');
+
     keyboardDiscount.classList.remove('change');
 
     page1_discount_ContinueBtn.classList.remove('change');
