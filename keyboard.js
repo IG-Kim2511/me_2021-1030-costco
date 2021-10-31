@@ -42,7 +42,7 @@ const cashier_number20 = 9999;
 const password = 0000
 
 
-// 🍀js1004-40. open - keyboard-login      
+// 🍀js1004-40. keyboard-login : open
 
 keyboardBtn.addEventListener('click',()=>{
 	keyboardLogin.classList.add('change');	
@@ -50,12 +50,12 @@ keyboardBtn.addEventListener('click',()=>{
 	keyboardDisplay.value = "";
 });
 
-// 🍀 close - login Keyboard
+// 🍀 keyboard-login : close 
 loginCloseKey.addEventListener('click',()=>{
 	keyboardLogin.classList.remove('change');
 });
 
-// 🍀 Enter - login Keyboard - cashier number & open keyboardContainer
+// 🍀 keyboard-login : Enter - cashier number & open keyboardContainer
 
 loginEnterKey.addEventListener('click',()=>{
 
@@ -318,6 +318,11 @@ CodeCloseKey.addEventListener('click',()=>{
 });
 
 // 🍀Keyboard-code : Enter
+
+CodeEnterKey.addEventListener('click',()=>{
+	scannerInput.value = CodeDisplay.value;
+	keyboardCode.classList.remove('change');
+});
 
 
 //🍀login-keyboard - event bubbling
