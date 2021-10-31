@@ -687,12 +687,45 @@ page1_discount_ContinueBtn.addEventListener('click',()=>{
 });
 
 
+// 🍀js1031 request help
 
 
+const help1 = document.querySelector('.page1 .help');
+const help2 = document.querySelector('.page2 .help');
+const help3 = document.querySelector('.page3 .help');
 
+const ballonParent = document.querySelector('.ballon-parent');
+const ballonParent2 = document.querySelector('.ballon-parent2');
+const ballonParent3 = document.querySelector('.ballon-parent3');
 
+const helpCloseBtn = document.querySelector('.ballon-parent .help_close');
+const helpCloseBtn2 = document.querySelector('.ballon-parent2 .help_close');
+const helpCloseBtn3 = document.querySelector('.ballon-parent3 .help_close');
 
+help1.addEventListener('click',()=>{
+    ballonParent.setAttribute('style', 'display: block;');
+});
 
+help2.addEventListener('click',()=>{
+    ballonParent2.setAttribute('style', 'display: block;');
+});
+
+help3.addEventListener('click',()=>{
+    ballonParent3.setAttribute('style', 'display: block;');
+});
+
+helpCloseBtn.addEventListener('click',()=>{
+    ballonParent.setAttribute('style', 'display: none;');
+});
+helpCloseBtn2.addEventListener('click',()=>{
+    ballonParent2.setAttribute('style', 'display: none;');
+});
+helpCloseBtn3.addEventListener('click',()=>{
+    ballonParent3.setAttribute('style', 'display: none;');
+});
+
+console.log(help2)
+console.log(help3)
 
 
 
