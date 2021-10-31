@@ -27,6 +27,14 @@ const discountDisplay = document.querySelector('.display-discount');
 const discountEnterKey = document.querySelector('.keyboard-discount .enter');
 const discountCloseKey = document.querySelector('.keyboard-discount .close');
 
+// code
+const keyboardCode = document.querySelector('.keyboard-code');
+const CodeDisplay = document.querySelector('.display-code');
+const CodeEnterKey = document.querySelector('.keyboard-code .enter');
+const CodeCloseKey = document.querySelector('.keyboard-code .close');
+
+const page1Code = document.querySelector('.page1 .code');
+
 // 
 const cashierElem = document.querySelector('.cashier');
 const cashier_number =  8888;
@@ -294,3 +302,69 @@ keyboardDiscount.addEventListener('click',(e)=>{
 		discountDisplay.value=valu+'0';
 	}
 });
+
+
+
+// 🍀 open - Keyboard-code  
+
+page1Code.addEventListener('click',()=>{
+	keyboardCode.classList.add('change');	
+	CodeDisplay.value = "";	
+});
+
+// 🍀js1031. Keyboard-code : close
+CodeCloseKey.addEventListener('click',()=>{
+	keyboardCode.classList.remove('change');
+});
+
+// 🍀Keyboard-code : Enter
+
+
+//🍀login-keyboard - event bubbling
+
+keyboardCode.addEventListener('click',(e)=>{
+	
+	console.log(CodeDisplay.value);
+
+	if (e.target.classList.contains('key_1')) {
+		let valu = CodeDisplay.value;
+		CodeDisplay.value=valu+'1';
+	}
+	if (e.target.classList.contains('key_2')) {		
+		let valu = CodeDisplay.value;
+		CodeDisplay.value=valu+'2';
+	}
+	if (e.target.classList.contains('key_3')) {		
+		let valu = CodeDisplay.value;
+		CodeDisplay.value=valu+'3';
+	}
+	if (e.target.classList.contains('key_4')) {
+		let valu = CodeDisplay.value;
+		CodeDisplay.value=valu+'4';
+	}
+	if (e.target.classList.contains('key_5')) {
+		let valu = CodeDisplay.value;
+		CodeDisplay.value=valu+'5';
+	}
+	if (e.target.classList.contains('key_6')) {
+		let valu = CodeDisplay.value;
+		CodeDisplay.value=valu+'6';
+	}
+	if (e.target.classList.contains('key_7')) {
+		let valu = CodeDisplay.value;
+		CodeDisplay.value=valu+'7';
+	}
+	if (e.target.classList.contains('key_8')) {
+		let valu = CodeDisplay.value;
+		CodeDisplay.value=valu+'8';
+	}
+	if (e.target.classList.contains('key_9')) {
+		let valu = CodeDisplay.value;
+		CodeDisplay.value=valu+'9';
+	}
+	if (e.target.classList.contains('key_0')) {		
+		let valu = CodeDisplay.value;
+		CodeDisplay.value=valu+'0';
+	}
+});
+
