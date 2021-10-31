@@ -447,8 +447,11 @@ page1DiscountBtn.addEventListener('click',(e)=>{
         //     console.log(`hello`)
         // } 
 
+
     }
 }); 
+
+
 
 // 🍀js1026. stay the discount page when there are numbers already on table  🌊
 
