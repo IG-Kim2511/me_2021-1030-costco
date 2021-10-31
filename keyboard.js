@@ -299,7 +299,7 @@ keyboardDiscount.addEventListener('click',(e)=>{
 	}
 	if (e.target.classList.contains('key_0')) {		
 		let valu = discountDisplay.value;
-		discountDisplay.value=valu+'0';
+		discountDisplay.value=valu+'0'; 
 	}
 });
 
