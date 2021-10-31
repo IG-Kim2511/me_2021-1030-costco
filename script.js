@@ -204,14 +204,14 @@ window.addEventListener('DOMContentLoaded',()=>{
     // keyboardLogin
 
     // 🍉real code
-    // keyboardLogin.classList.add('change');	
-	// loginDisplay.value = "";
-	// keyboardDisplay.value = "";    
-    // scannerInput.style.display =`none`;  
+    keyboardLogin.classList.add('change');	
+	loginDisplay.value = "";
+	keyboardDisplay.value = "";    
+    scannerInput.style.display =`none`;  
 
 
-    // 🍉test
-    scannerInput.focus();
+    // // 🍉test
+    // scannerInput.focus();
 
 });
 

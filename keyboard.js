@@ -320,7 +320,10 @@ CodeCloseKey.addEventListener('click',()=>{
 // 🍀Keyboard-code : Enter
 
 CodeEnterKey.addEventListener('click',()=>{
-	scannerInput.value = CodeDisplay.value;
+
+	console.log(typeof parseInt(CodeDisplay.value));
+	scannerInput.value = parseInt(CodeDisplay.value);
+
 	keyboardCode.classList.remove('change');
 });
 
