@@ -35,6 +35,8 @@
 }
   
 .click-right{
+  display: none; /* 🍖js1007 */
+
   width: 5.5rem;
   font-size: 1rem;
   background-color: var(--color-30);
@@ -46,6 +48,7 @@
   z-index: 10;
 
   animation: clickAnimation 3s ease 0s infinite normal forwards;
+
 }
   
 @keyframes clickAnimation {
