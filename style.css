@@ -74,10 +74,10 @@
     position: relative;
   }
 
-  /* 🍀1031 request-help_ballon */
+  /* 🍀request-help_ballon */
 
   .ballon-parent{
-    /* display: none; */
+    display: none; /* 🍖js1031 */
 
     position: relative;
     top: 11rem;
@@ -91,7 +91,7 @@
     0% {
       transform: scale(1);
     }  
-
+  
     50% {
       transform: scale(1.1);
     }
@@ -100,19 +100,10 @@
       transform: scale(1);
     }
   }
-
-  .help_button{
-
-    background-color: var(--color-10);  
-    color: var(--color-820);
-    font-size: 2rem;
-    border-radius: 0.5rem;
-
-  }
-
+  
  .help_balloon{
     
-    width: 15vw;
+    width: 25vw;
     border: 2px solid var(--color-20);
 
     border-radius: 0.5rem;
@@ -127,9 +118,21 @@
   }
 
  .help_balloon img{
-    width: 50%;
+    width: 20%;
     text-align: center;
+
+    margin-right: 3rem;
   }
+
+.help_close{
+  background-color: var(--color-10);  
+  color: var(--color-820);
+  font-size: 2rem;
+
+  margin-top: 0.5rem;
+  padding: 0 0.5rem;
+  border-radius: 0.5rem;
+}
 
 
   

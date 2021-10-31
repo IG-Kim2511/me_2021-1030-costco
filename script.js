@@ -690,8 +690,20 @@ page1_discount_ContinueBtn.addEventListener('click',()=>{
 // 🍀js1031 request help
 
 
+const help1 = document.querySelector('.page1 .help');
+const help2 = document.querySelector('.page2 .help');
+const help3 = document.querySelector('.page3 .help');
 
+const ballonParent = document.querySelector('.ballon-parent');
+const helpCloseBtn = document.querySelector('.help_close');
 
+help1.addEventListener('click',()=>{
+    ballonParent.setAttribute('style', 'display: block;');
+});
+
+helpCloseBtn.addEventListener('click',()=>{
+    ballonParent.setAttribute('style', 'display: none;');
+});
 
 
 
