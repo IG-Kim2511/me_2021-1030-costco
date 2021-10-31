@@ -73,6 +73,27 @@
     height: 100vh;
     position: relative;
   }
+
+  .world-right .help_balloon{
+    
+    width: 15vw;
+    border: 1px solid red;
+
+    border-radius: 0.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .world-right .help_balloon img{
+    width: 50%;
+    text-align: center;
+  }
+
+  .world-right .help_balloon{
+    border: 1px solid red;
+  }
   
   /*🍀 left-second-container */
   
