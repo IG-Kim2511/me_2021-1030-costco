@@ -133,9 +133,9 @@ const page1Code = document.querySelector('.page1 .code');
 
 // 
 const cashierElem = document.querySelector('.cashier');
-const cashier_number =  8888;
-const cashier_number20 = 9999;
-const password = 0000;
+const cashier_number =  88;
+const cashier_number20 = 99;
+const password = 00;
 
 
 
