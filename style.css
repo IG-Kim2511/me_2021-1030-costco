@@ -281,7 +281,7 @@
   
   /* ⚡js1025 selected */
   .tbody_items.selected{
-    background-color: #ffff00;
+    background-color: var(--color-40);
   }
   
   
@@ -303,15 +303,11 @@
   .check-table tbody .discount_title input {  
     width: 2.5rem;
    
-    background-color: #ffff00;
-   
+    background-color: var(--color-40);   
   }
-  
-  
-  .check-table tbody .discount_span{
-   background-color: yellowgreen;
-   padding: 0 0.2rem;
-  
+    
+  .check-table tbody .discount_span{   
+   padding: 0 0.2rem;  
    cursor: pointer;
   }
   

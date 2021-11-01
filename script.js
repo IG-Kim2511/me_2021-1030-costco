@@ -26,7 +26,7 @@ CSS : clear and organize , var(--color)
 
 // 🍀let
 
-// 🌊 (hard-coding) (it's supposed to change with server data)
+// 🍚 (hard-coding) (it's supposed to change with server data)
 
 let dataNumber0 = selfcheckitem[0].number;
 let dataName0 = selfcheckitem[0].name;
@@ -420,9 +420,9 @@ page1_10ContinueBtn.addEventListener('click',()=>{
 
 30 put the number from keyboard into item on table 
 
-40 change ~~%, ~~$,   total ~~~$ 🌊
+40 change ~~%, ~~$,   total ~~~$ 🍚
 
-50, when we click 10%,20%....discount btn from right, the numbers are supposed to go into ~~% input 🌊
+50, when we click 10%,20%....discount btn from right, the numbers are supposed to go into ~~% input 🍚
 
 60. page1DiscountContinueBtn, back to page1, 
 
@@ -454,8 +454,7 @@ page1DiscountBtn.addEventListener('click',(e)=>{
 }); 
 
 
-
-// 🍀js1026. stay the discount page when there are numbers already on table  🌊
+// 🍀js1026. stay the discount page when there are numbers already on table  🍚
 
 
 //🍀js1007, 🍀js1025. Discount line created under the each items
@@ -465,15 +464,13 @@ function page1DiscountHandler(e) {
     e.preventDefault();   
 
      // 🍉1025-30 selected tr : puttiong the background color   
-    //🍉1025-30  putting the Discount line when I click the tr ~ td 🌊
+    //🍉1025-30  putting the Discount line when I click the tr ~ td 🍚
 
     tableWrap.addEventListener("click",(e)=>{
         
         const selected = document.querySelector(".tbody_items.selected");
-
         
         clickRight.setAttribute('style','display:none');
-
 
         if (selected != null) {
             selected.classList.remove("selected");                   
@@ -488,7 +485,7 @@ function page1DiscountHandler(e) {
         console.log(e.target)        
 
 
-        // 🍉js1025-30. Discount line create🌊
+        // 🍉js1025-30. Discount line create🍚
         // tr = e.target.parentnode
 
         console.log(e.target.parentNode)
@@ -499,16 +496,14 @@ function page1DiscountHandler(e) {
         // e.target.parentNode.children[3].children[0].innerHTML=`&nbsp;`;  
         // e.target.parentNode.children[4].children[0].innerHTML=`&nbsp;`;  
 
-
         // keyboard        
-        keyboardDiscount.classList.add('change');         
-        
+        keyboardDiscount.classList.add('change');                 
              
         // 🍉1025-20.            
         discount_num_putting(e)
     });
     
-    // 🌊putting BG , when click the input 
+    // 🍚putting BG , when click the input 
 }
 
 
@@ -521,7 +516,7 @@ function discount_num_putting(e) {
     discount_percent =  e.target.parentNode.children[1].children[0];
     console.log(discount_percent)
     
-    // 🌊putting keyboard-discount number into e.target
+    // 🍚putting keyboard-discount number into e.target
 
         discountedSet = e.target.parentNode.children[2].children[0];
 
@@ -551,10 +546,8 @@ function discount_num_putting(e) {
         }        
     ); 
 
-    discountDisplay.value = "";
-    
+    discountDisplay.value = "";    
 }
-
 
 
 //🍀js1007-70. page1DiscountContinueBtn, back to page1, focus to scanner
@@ -587,16 +580,17 @@ page1_discount_ContinueBtn.addEventListener('click',()=>{
     scannerInput.focus();
 
 
-    /* 🍚kei-now */
+    /* 🍉background color delete */
+
+    let tbody_itemsAll = document.querySelectorAll('.tbody_items');
+
+    for (let i = 0; i < tbody_itemsAll.length; i++) {       
+        tbody_itemsAll[i].classList.remove('selected');
+    }
 });
 
 
-
-
 // 🍀js1031 request help
-
-
-
 
 help1.addEventListener('click',()=>{
     ballonParent.setAttribute('style', 'display: block;');
@@ -619,9 +613,6 @@ helpCloseBtn2.addEventListener('click',()=>{
 helpCloseBtn3.addEventListener('click',()=>{
     ballonParent3.setAttribute('style', 'display: none;');
 });
-
-console.log(help2)
-console.log(help3)
 
 
 
