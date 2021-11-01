@@ -76,7 +76,7 @@ enterKey.addEventListener('click',()=>{
 	else if(keyboardDisplay.value !== password) {
 		keyboardPassword.classList.remove('change');
 		keyboardLogin.classList.remove('change');
-		cashierElem.textContent = `CASHIER 0000`;
+		cashierElem.textContent = `CASHIER 00`;
 		
 		worldRight_btnContainer.style.display = `none`;
 		scannerInput.style.display =`none`;  
