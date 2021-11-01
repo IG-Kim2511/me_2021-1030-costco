@@ -73,8 +73,7 @@ enterKey.addEventListener('click',()=>{
 		scannerInput.style.display =`block`; 
 		scannerInput.focus();
 	}
-	// if(keyboardDisplay.value !== password)
-	else {
+	else if(keyboardDisplay.value !== password) {
 		keyboardPassword.classList.remove('change');
 		keyboardLogin.classList.remove('change');
 		cashierElem.textContent = `CASHIER 0000`;
@@ -82,7 +81,7 @@ enterKey.addEventListener('click',()=>{
 		worldRight_btnContainer.style.display = `none`;
 		scannerInput.style.display =`none`;  
 
-	
+		console.log('wrong password')	
 	}	
 });
 
