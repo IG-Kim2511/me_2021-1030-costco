@@ -321,11 +321,51 @@ CodeCloseKey.addEventListener('click',()=>{
 
 CodeEnterKey.addEventListener('click',()=>{
 
-	console.log(typeof parseInt(CodeDisplay.value));
-	scannerInput.value = parseInt(CodeDisplay.value);
+	if (CodeDisplay.value == dataNumber0) {
+        scanner(dataNumber0,dataName0,dataPrice0);
+
+    }else if (CodeDisplay.value == dataNumber1) {
+        scanner(dataNumber1,dataName1,dataPrice1);
+
+    }else if (CodeDisplay.value == dataNumber2) {
+        scanner(dataNumber2,dataName2,dataPrice2);
+    }else{
+        return;
+    }  
 
 	keyboardCode.classList.remove('change');
+	
+    scannerInput.focus();
+
 });
+
+
+
+/* 🍤reference
+
+scannerInput.addEventListener('change',()=>{
+
+    if (scannerInput.value == dataNumber0) {
+        scanner(dataNumber0,dataName0,dataPrice0);
+
+    }else if (scannerInput.value == dataNumber1) {
+        scanner(dataNumber1,dataName1,dataPrice1);
+
+    }else if (scannerInput.value == dataNumber2) {
+        scanner(dataNumber2,dataName2,dataPrice2);
+    }else{
+        return;
+    }  
+
+    scannerInput.value="";
+    scannerInput.focus();
+}); 
+*/
+
+
+
+
+
 
 
 //🍀login-keyboard - event bubbling
