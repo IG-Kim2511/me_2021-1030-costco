@@ -526,28 +526,3 @@ helpCloseBtn3.addEventListener('click',()=>{
 
 
 
-
-
-
-
-
-
-
-
-
-/* (📌hide it for now) 🍀js1006. start menu 
-const worldStart = document.querySelectorAll('.world-start');
-const worldStartBtn = document.querySelector('.world-start-btn'); 
-
-const trans = document.querySelector('.trans');
-
-let transNum = document.querySelector('.transNum');
-let n = 0;
-
-worldStartBtn.addEventListener('click',()=>{
-    worldStartBtn.parentNode.classList.add('change');
-
-    n++;
-    transNum.innerHTML=`${n}`;   
-}); */
-

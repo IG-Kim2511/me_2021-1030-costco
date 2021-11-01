@@ -1,8 +1,6 @@
 
 // 🍀let
 
-// 🍚 (hard-coding) (it's supposed to change with server data)
-
 let dataNumber0 = selfcheckitem[0].number;
 let dataName0 = selfcheckitem[0].name;
 let dataPrice0 = selfcheckitem[0].price;

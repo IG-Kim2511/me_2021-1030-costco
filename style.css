@@ -79,31 +79,7 @@
   }
 }
   
-  /* (📌hide it for now) 🍀start menu 
-  .world-start{
-    background-color: var(--color-white-darker);
-    width: 100vw;
-    height: 100vh;
-  
-    position: absolute;
-    top: 0;
-    left: 0;
-  
-    text-align: center;  
-    z-index: 200;
-  
-    transition: all 0.3s;
-  }
-  
-  .world-start.change{
-    top: -100vh;
-  }
-  
-  .world-start-btn{
-  margin-top:45vh ;  
-  }
-   */
-  
+
   .world-middle {
     width: 0.5vw;
     height: 100vh;
