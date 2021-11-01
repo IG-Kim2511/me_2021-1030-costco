@@ -868,9 +868,7 @@
   
 
   
-  .page1 .btn-container .help {
-
-  
+  .page1 .btn-container .help {  
     background: linear-gradient(
       to bottom,
       var(--color-30) 5%,
@@ -1313,15 +1311,7 @@
     );
     background-color: var(--color-20);
   }
-  .page1 .btn-container .grid-r:hover {
-    background: linear-gradient(
-      to bottom,
-      var(--color-20-dark) 5%,
-      var(--color-20) 100%
-    );
-    background-color: var(--color-20-dark);
-  }
-  
+
   .page1-discount .btn-container .grid-u {
     grid-area: u;
   }
