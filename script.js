@@ -40,7 +40,6 @@ let dataNumber2 = selfcheckitem[2].number;
 let dataName2 = selfcheckitem[2].name;
 let dataPrice2 = selfcheckitem[2].price;
 
-
 // js1025. discount
 
 let discountTitle;
@@ -50,7 +49,6 @@ let discountSetAll;
 let discountAmountAll;
 let discountedPriceAll;
 
-
 // js1025 discount-price calc
 let discount_percent;
 let discountedSet;
@@ -58,7 +56,6 @@ let discounted_itemprice;
 
 let itemPrice;
 let itemPriceNum;
-
 
 // js1004
 let grandTaxPriceElem = document.querySelector('.grand_tax-price');
@@ -71,7 +68,6 @@ let grandTotalPriceElem =  document.querySelector('.grand_totla-price');
 
 //  js1005
 let removeBtn = document.querySelector(".remove_btn");
-
 
 // 🍀const     
 
@@ -91,7 +87,6 @@ const page1FinishBtn = document.querySelector('.page1 .finish');
 const page1_10Elem = document.querySelector('.page1-10');
 const page1_10ContinueBtn = document.querySelector('.page1-10 .continue');
 
-
 const page1_discount_Elem = document.querySelector('.page1-discount');
 const page1_discount_ContinueBtn = document.querySelector('.page1-discount .continue');
 
@@ -104,18 +99,26 @@ trans_discount-percent
 */
 const item_discountPercent = document.querySelector('.page1-discount .item_discount-percent');
 
-
-
 const page2Elem = document.querySelector('.page2');
 const page2ReturnBtn = document.querySelector('.page2 .return');
 const page2CreditBtn = document.querySelector('.page2 .credit');
 const page2DebitBtn = document.querySelector('.page2 .debit');
 
-
 const page3Elem = document.querySelector('.page3');
 const page3CancelBtn = document.querySelector('.page3 .cancel');
 
+// request-help
+const help1 = document.querySelector('.page1 .help');
+const help2 = document.querySelector('.page2 .help');
+const help3 = document.querySelector('.page3 .help');
 
+const ballonParent = document.querySelector('.ballon-parent');
+const ballonParent2 = document.querySelector('.ballon-parent2');
+const ballonParent3 = document.querySelector('.ballon-parent3');
+
+const helpCloseBtn = document.querySelector('.ballon-parent .help_close');
+const helpCloseBtn2 = document.querySelector('.ballon-parent2 .help_close');
+const helpCloseBtn3 = document.querySelector('.ballon-parent3 .help_close');
 //🍀server - mySQL
 
 // 🍀event
@@ -583,6 +586,8 @@ page1_discount_ContinueBtn.addEventListener('click',()=>{
     scannerInput.style.display =`block`;  
     scannerInput.focus();
 
+
+    /* 🍚kei-now */
 });
 
 
@@ -591,17 +596,7 @@ page1_discount_ContinueBtn.addEventListener('click',()=>{
 // 🍀js1031 request help
 
 
-const help1 = document.querySelector('.page1 .help');
-const help2 = document.querySelector('.page2 .help');
-const help3 = document.querySelector('.page3 .help');
 
-const ballonParent = document.querySelector('.ballon-parent');
-const ballonParent2 = document.querySelector('.ballon-parent2');
-const ballonParent3 = document.querySelector('.ballon-parent3');
-
-const helpCloseBtn = document.querySelector('.ballon-parent .help_close');
-const helpCloseBtn2 = document.querySelector('.ballon-parent2 .help_close');
-const helpCloseBtn3 = document.querySelector('.ballon-parent3 .help_close');
 
 help1.addEventListener('click',()=>{
     ballonParent.setAttribute('style', 'display: block;');
