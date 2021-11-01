@@ -348,11 +348,14 @@ logoutBtn.addEventListener('click',()=>{
 
 // 🍀js1005. page1-remove btn click, move into remove page...etc
 
+const tableParent = document.querySelector('.table-parent');
+
 removeItemBtn.addEventListener('click',()=>{
     if (grandTotalPriceElem.textContent > 0) {        
-        removeImgHandler();      
-        
         scannerInput.style.display =`none`;  
+        tableParent.setAttribute('style','pointer-events: auto;');
+        
+        removeImgHandler();      
     }
 }); 
 
@@ -389,7 +392,7 @@ tableWrap.addEventListener('click',(e)=>{
 
 page1_10ContinueBtn.addEventListener('click',()=>{
     page1_10Elem.classList.remove('change');
-
+    tableParent.setAttribute('style','pointer-events: none;');
     
     scannerInput.style.display =`block`;  
     scannerInput.focus();
@@ -437,6 +440,7 @@ page1DiscountBtn.addEventListener('click',(e)=>{
 
 
     if (grandTotalPriceElem.textContent > 0) {        
+        tableParent.setAttribute('style','pointer-events: auto;');
         scannerInput.style.display =`none`;          
         page1_discount_Elem.classList.add('change');
 
@@ -555,6 +559,7 @@ function discount_num_putting(e) {
 page1_discount_ContinueBtn.addEventListener('click',()=>{
     
     clickRight.setAttribute('style','display:none');
+    tableParent.setAttribute('style','pointer-events: none;');
 
     keyboardDiscount.classList.remove('change');
 
