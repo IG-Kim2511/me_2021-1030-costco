@@ -5,42 +5,6 @@ keyboard-password  --display input type : text
 keyboard-discount  --display input type : number
 */
 
-// 🍀 let
-// 🍀const
-const keyboardBtn  = document.querySelector('.keyboard-btn');
-
-// login
-const keyboardLogin = document.querySelector('.keyboard-login');
-const loginDisplay = document.querySelector('.display-login');
-const loginEnterKey = document.querySelector('.keyboard-login .enter');
-const loginCloseKey = document.querySelector('.keyboard-login .close');
-
-// keyboard-password
-const keyboardPassword = document.querySelector('.keyboard-password');
-const keyboardDisplay = document.querySelector('#display');
-const enterKey = document.querySelector('.keyboard-password .enter');
-const closeKey = document.querySelector('.keyboard-password .close');
-
-// discount
-const keyboardDiscount = document.querySelector('.keyboard-discount');
-const discountDisplay = document.querySelector('.display-discount');
-const discountEnterKey = document.querySelector('.keyboard-discount .enter');
-const discountCloseKey = document.querySelector('.keyboard-discount .close');
-
-// code
-const keyboardCode = document.querySelector('.keyboard-code');
-const CodeDisplay = document.querySelector('.display-code');
-const CodeEnterKey = document.querySelector('.keyboard-code .enter');
-const CodeCloseKey = document.querySelector('.keyboard-code .close');
-
-const page1Code = document.querySelector('.page1 .code');
-
-// 
-const cashierElem = document.querySelector('.cashier');
-const cashier_number =  8888;
-const cashier_number20 = 9999;
-const password = 0000
-
 
 // 🍀js1004-40. keyboard-login : open
 
@@ -109,8 +73,7 @@ enterKey.addEventListener('click',()=>{
 		scannerInput.style.display =`block`; 
 		scannerInput.focus();
 	}
-	// if(keyboardDisplay.value !== password)
-	else {
+	else if(keyboardDisplay.value !== password) {
 		keyboardPassword.classList.remove('change');
 		keyboardLogin.classList.remove('change');
 		cashierElem.textContent = `CASHIER 0000`;
@@ -118,7 +81,7 @@ enterKey.addEventListener('click',()=>{
 		worldRight_btnContainer.style.display = `none`;
 		scannerInput.style.display =`none`;  
 
-	
+		console.log('wrong password')	
 	}	
 });
 
