@@ -281,7 +281,7 @@
   
   /* ⚡js1025 selected */
   .tbody_items.selected{
-    background-color: #ffff00;
+    background-color: var(--color-40);
   }
   
   
@@ -303,15 +303,11 @@
   .check-table tbody .discount_title input {  
     width: 2.5rem;
    
-    background-color: #ffff00;
-   
+    background-color: var(--color-40);   
   }
-  
-  
-  .check-table tbody .discount_span{
-   background-color: yellowgreen;
-   padding: 0 0.2rem;
-  
+    
+  .check-table tbody .discount_span{   
+   padding: 0 0.2rem;  
    cursor: pointer;
   }
   
@@ -868,9 +864,7 @@
   
 
   
-  .page1 .btn-container .help {
-
-  
+  .page1 .btn-container .help {  
     background: linear-gradient(
       to bottom,
       var(--color-30) 5%,
@@ -1313,15 +1307,7 @@
     );
     background-color: var(--color-20);
   }
-  .page1 .btn-container .grid-r:hover {
-    background: linear-gradient(
-      to bottom,
-      var(--color-20-dark) 5%,
-      var(--color-20) 100%
-    );
-    background-color: var(--color-20-dark);
-  }
-  
+
   .page1-discount .btn-container .grid-u {
     grid-area: u;
   }
