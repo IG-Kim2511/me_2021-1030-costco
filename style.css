@@ -214,7 +214,7 @@
     flex-direction: column;
   }
   
-  .kei {
+  .table-parent {
     background-color: #ffffff;
     width: 40vw;
     padding-top: 2rem;
@@ -222,26 +222,28 @@
     color: #717274;
     margin: auto;
     text-align: center;
+
+    pointer-events: none;/* js */
   }
   
-  .kei .information {
+  .table-parent .information {
     /* width: 30vw; */
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
-  .kei .information p {
+  .table-parent .information p {
     padding: 1rem 2rem;  
   }
 
-  .kei .kei-img{
+  .table-parent .mart-img{
       width: 20rem;
   }
   
   /* 🍉table */
   
-  .kei .check-table {
+  .table-parent .check-table {
     width: 40vw;
     border-collapse: collapse;
   }
