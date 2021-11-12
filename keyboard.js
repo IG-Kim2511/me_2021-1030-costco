@@ -216,11 +216,9 @@ keyboardPassword.addEventListener('click',(e)=>{
 
 
 
-//🍀login-keyboard - event bubbling
+//🍀keyboard-login - event bubbling
 
 keyboardDiscount.addEventListener('click',(e)=>{	
-
-
 	    
 	// discountDisplay.value = "";
 
